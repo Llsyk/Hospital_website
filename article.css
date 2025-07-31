@@ -1,0 +1,375 @@
+/* header */
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width:320px) {
+    li,span{
+     font-size: 12px;
+    }
+ }
+ 
+
+
+* {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url(img/pngbg.jpg) no-repeat center fixed;
+    background-size: cover;
+
+}
+.glass {
+    background-color: rgba(250, 250, 250, 0.3);
+    background-size: cover;
+    border: 1px solid rgb(247, 246, 246);
+    border-radius: 40px;
+    padding: 30px;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+    /* background-color: rgba(181, 181, 181, 0.3);
+    background-size: cover;
+    border: 1px solid #ddd;
+    border-radius: 40px;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2); */
+}
+
+.glass:hover {
+    background-color: rgba(250, 250, 250, 0.5);
+    background-size: cover;
+    border: 1px solid rgb(247, 246, 246);
+    border-radius: 40px;
+    box-shadow: 0 8px 10px rgba(255, 255, 255, 0.4);
+
+}
+
+.listGlass li{
+    background-color: rgba(250, 250, 250, 0.5);
+    background-size: cover;
+    border: 1px solid rgb(247, 246, 246);
+    /* box-shadow: 0 8px 10px rgba(255, 255, 255, 0.4); */
+}
+.listGlass li:hover{
+    background-color: rgba(250, 250, 250, 0.3);
+    background-size: cover;
+    border: 1px solid rgb(247, 246, 246);
+    /* box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2); */
+}
+
+.nav-item a {
+    color: white;
+    margin-right: 10px;
+}
+
+.nav-item a:hover {
+    /* transition: 0.7s; */
+    padding: 5px 30px;
+    color:white;
+    background-color: rgba(250, 250, 250, 0.3);
+    border: 0.5px solid rgba(220, 219, 219,0.2);
+    border-radius: 10px;
+    /* border-radius: 0.4em; */
+    /* box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2); */
+}
+
+.brandName {
+    font-weight: bold;
+}
+
+.searchIcn {
+    color: rgb(20, 59, 110);
+    margin: auto;
+}
+
+/*end of navbar*/
+
+
+/* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*article cards*/
+
+
+body {
+  /*width: 100%;
+  /*height: 100vh;*/
+  background: url(img/pngbg.jpg) no-repeat center fixed;
+  background-size: cover;
+  background-size: 400% 400%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /*min-height: 100vh;*/
+
+}
+
+.glass {
+  background-color: rgba(250, 250, 250, 0.3);
+  background-size: cover;
+  border: 1px solid rgb(247, 246, 246);
+  border-radius: 40px;
+
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+  /* background-color: rgba(181, 181, 181, 0.3);
+  background-size: cover;
+  border: 1px solid #ddd;
+  border-radius: 40px;
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2); */
+}
+
+.glass:hover {
+  background-color: rgba(250, 250, 250, 0.5);
+  background-size: cover;
+  border: 1px solid rgb(247, 246, 246);
+  border-radius: 40px;
+  box-shadow: 0 8px 10px rgba(255, 255, 255, 0.4);
+
+}
+
+
+.container {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  /*margin: 50px 0;*/
+}
+
+/*.container .card:hover{
+  background-color: #F6F6F6;
+  transform: translate(-50px);
+}*/
+.container .card:hover {
+  box-shadow: 5px 6px 6px 2px grey;
+  transform: scale(1.1);
+  z-index: 1000;
+  transform: perspective(200px) rotate(-10deg);
+}
+
+
+.container .card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 40px;
+  margin-top: 130px;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: .5s;
+}
+
+
+.card {
+
+  border: 1px solid #2781ab;
+
+
+}
+
+
+/*button*/
+.bb{
+  background-color: #2781ab;
+  color: #fff;
+
+}
+
+.bb:hover {
+  background: rgb(20, 59, 110);
+    ;
+}
+
+/*card*/
+
+/*for faq */
+
+
+.lineUp {
+  animation: 5s anim-lineUp ease-out infinite;
+}
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.faq_image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.collapsible {
+
+  margin-left: 55px;
+  background-color: #2781ab;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 80%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+  background: rgb(20, 59, 110);
+  ;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  margin-left: 55px;
+  width: 80%;
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #fff;
+}
+
+/* end of faq*/
+
+
+/* contact us */
+.contact {
+  position: relative;
+  height: 80vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url(img/blur-hospital.jpg) center fixed;
+  background-size: cover;
+  margin-top: 50px;
+}
+
+.contact .content {
+  max-width: 800px;
+  text-align: center;
+}
+
+
+.contact .content h2 {
+  font-size: 36px;
+  font-weight: 500;
+  color: black;
+}
+
+.contactWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.contactWrapper .contactInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.contactWrapper .contactInfo .box {
+  position: relative;
+  position: 20px 0;
+  display: flex;
+}
+
+.contactWrapper .contactInfo .box .icon {
+  min-height: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  padding-right: 20px;
+}
+
+.contactWrapper .contactInfo .box .text {
+  display: flex;
+  margin-left: 20px;
+  font-size: 13px;
+  color: #fff;
+  flex-direction: column;
+  font-weight: 300;
+}
+
+.contactWrapper .contactInfo .box .text h4 {
+  font-weight: 500;
+  color: black;
+  font-size: 20px;
+}
+
+@media (max-width: 800px) {
+  .contact {
+      padding: 50px;
+  }
+
+  .contactWrapper {
+      flex-direction: column;
+  }
+
+  .container .contactInfo {
+      margin-bottom: 40px;
+  }
+
+}
+
+.linkIcn {
+  padding: 10px 30px;
+
+}
+
+.social :hover {
+  background-color: rgb(57, 101, 160);
+  color: white;
+  border-radius: 15px;
+  /* padding: 10px; */
+}
+
+.social {
+  font-size: 30px;
+  padding: 30px;
+  justify-content: space-between;
+  align-items: center;
+}

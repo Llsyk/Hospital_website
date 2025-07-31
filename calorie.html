@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="calorie.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Calorie
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class='resp_code'>
+        <div id='tab'>
+            <img src="img/logo.png" alt="" class="img-fluid">
+            <h5 style="display: inline;">Hygieia Internation Hospital</h5>
+            <h3 style="text-align: center; margin-top: 20px;">Calorie Calculator</h3>
+            <form name="frm" action="" class='frms noborders'>
+                <label for="age" class="form-label">Age:</label>
+                <div class="age mycal">
+                    <input class="form-control " style='width:80%;margin-right: 20px;' type="text" name="age" id="age"
+                        onkeypress="return cknum(event,age)">years
+                </div>
+                <div class="gender mycal">
+                    <label for="gen" style="margin-right: 20px;"> Gender:</label>
+                    <input class="form-check-input" type="radio" name="gen" id="gen" checked>
+                    <label for="gen" class="form-check-label" style="margin-right: 20px;"> Male</label>
+                    <input class="form-check-input" type="radio" name="gen" id="gen">
+                    <label for="" class="form-check-label">Female</label>
+                </div>
+                <div class="height mycal">
+                    <label for="foot" class="form-label">Height:</label><br>
+                    <select class="form-select" style="margin-bottom: 10px;" name="foot" id="foot" onchange="hcon()">
+                        <option value="1">1'</option>
+                        <option value="2">2'</option>
+                        <option value="3">3'</option>
+                        <option value="4">4'</option>
+                        <option value="5">5'</option>
+                        <option value="6">6'</option>
+                        <option value="7">7'</option>
+                    </select>
+
+                    <select class="form-select" name="inch" id="inch" onchange="hcon()">
+                        <option value="1">1"</option>
+                        <option value="2">2"</option>
+                        <option value="3">3"</option>
+                        <option value="4">4"</option>
+                        <option value="5">5"</option>
+                        <option value="6">6"</option>
+                        <option value="7">7"</option>
+                        <option value="8">8"</option>
+                        <option value="9">9"</option>
+                        <option value="10">10"</option>
+                        <option value="11">11"</option>
+                    </select>
+                </div>
+
+                <div class="heightCM mycal">
+                    <label for="cen" class="form-label"> Cms :</label>
+                    <input class="form-control" type="text" name="cen" id="cen" size="4" onkeyup="con(cen)">
+                </div>
+                <div class="weight mycal">
+                    <label for="weight" class="form-label"> Weight:</label>
+                    <input class="form-control" type="text" name="weight" id="weight" style="margin-bottom: 10px;"
+                        onkeyup="isNumberKey(this.id)">
+                    <select name="wtype" id="wtype" class="form-select">
+                        <option value="kg">Kg</option>
+                        <option value="pounds">Pounds</option>
+                    </select>
+                </div>
+                <div class="active mycal">
+                    <label for="loa" class="form-label"> Activeness:</label>
+                    <select class="form-select" name="loa" id="loa">
+                        <option value="1">Sedentary</option>
+                        <option value="2">Light Active</option>
+                        <option value="3">Moderately Active</option>
+                        <option value="4">Very Active</option>
+                        <option value="5">Extra Active</option>
+                    </select>
+                </div>
+                <div class="button mycal">
+                    <input class='blue_button' type="button" value="Calculate The Calorie" onclick="cc()"><span
+                        id="dumdiv" style=" font-size: 10px;color: #dadada;">
+
+
+                        <a id="dum" style="padding-right:0px; text-decoration:none;color: green;text-align:center;"
+                            href="calorie.js"></a></span>
+                </div>
+
+            </form>
+            <div class="frms noborders mycal">
+                <h4>Calorie Result</h4>
+
+                <label for="rc" class="form-label">Calorie Needed:</label>
+                <input class="form-control" type="text" id="rc" style="margin-bottom: 10px;" readonly>
+                <select name="caltype" id="caltype" onChange="convert()" class="form-select">
+                    <option value="g">Pounds</option>
+                    <option value="kg">Kilograms</option>
+                    <option value="pounds">Grams</option>
+                </select>
+
+            </div>
+            <div style="color:#007961; font-size:13px;">You Must Intake The Following Daily</div>
+            <div class="frms noborders">
+                <label for="rf" class="form-label"> Fat:</label>
+                <div class="fat mycal">
+
+                    <input class="form-control" type="text" id="rf" style='width:80%;' readonly>
+                    <label id="l1" class="form-label"></label> per day
+                </div>
+                <label for="rp" class="form-label"> Protein:</label>
+                <div class="protein mycal">
+
+                    <input class="form-control" type="text" id="rp" style='width:80%;' readonly>
+                    <label id="l2" class="form-label"></label> per day
+                </div>
+                <label for="rh" class="form-label">Carbohydrate:</label>
+                <div class="carbohydrate mycal">
+
+                    <input class="form-control" type="text" id="rh" style='width:80%;' readonly>
+                    <label id="l3" class="form-label"></label> per day
+                </div>
+                <label for="ra" class="form-label"> Alcohol:</label>
+                <div class="alcohol mycal">
+
+                    <input class="form-control" type="text" id="ra" style='width:80%;' readonly>
+                    <label id="l4" class="form-label"></label> per day
+                </div>
+
+
+            </div>
+
+            <div class="button mycal">
+                <a class="btn blue_button " href="home.html" role="button" style="color: white;">Back to home page</a>
+
+            </div>
+        </div>
+    </div>
+    <script src="calorie.js"></script>
+</body>
+
+</html>

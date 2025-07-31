@@ -1,0 +1,300 @@
+/* header */
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width:320px) {
+    li,span{
+     font-size: 12px;
+    }
+ }
+ 
+
+
+* {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-item a {
+    color: white;
+    margin-right: 10px;
+}
+
+.nav-item a:hover {
+    /* transition: 0.7s; */
+    padding: 5px 30px;
+    color:white;
+    background-color: rgba(250, 250, 250, 0.3);
+    border: 0.5px solid rgba(220, 219, 219,0.2);
+    border-radius: 10px;
+    /* border-radius: 0.4em; */
+    /* box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2); */
+}
+
+.brandName {
+    font-weight: bold;
+}
+
+.searchIcn {
+    color: white;
+    margin: auto;
+}
+/* /////////////////////// */
+/* body */
+.maternal {
+    margin-top: 100px;
+}
+
+.maternalContent,
+.childContent {
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+.thumbnail {
+    border-radius: 20px;
+}
+
+.thumbnail:hover {
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+    transform: scale(1.1);
+
+}
+
+.badge {
+    color: white;
+}
+
+.more-stuff-grid {
+    overflow-x: hidden;
+    position: relative;
+}
+
+.from-left {
+    position: relative;
+    left: -1000px;
+}
+
+.from-right {
+    position: relative;
+    right: -1000px;
+}
+
+.from-left-normal {
+    left: 0;
+    transition: left 2s ease-in-out;
+}
+
+.from-right-normal {
+    right: 0;
+    transition: right 2s ease-in-out;
+}
+
+
+
+
+
+.list-group {
+    width: 70%;
+}
+
+.eye,
+.child {
+    margin-top: 100px;
+}
+
+.eyeTitle {
+    float: right;
+}
+
+.maternalTitle,
+.childTitle {
+    float: left;
+}
+
+.rtl,
+.ltr {
+    clear: both;
+}
+
+
+
+.packageTitle {
+    display: inline;
+    padding-bottom: 40px;
+}
+
+.packageTitle:hover {
+    padding: 10px 0;
+    border-bottom: #4E944F 5px solid;
+    transition: 0.5s;
+}
+
+.packageImg {
+    margin-top: 70px;
+}
+
+.maternal row {
+    display: flex;
+}
+
+.purchase .purchaseBtn {
+    color: black;
+    margin-top: 20px;
+}
+
+.purchase .purchaseIcn {
+    margin: auto;
+
+
+}
+
+.purchase a {
+    margin: auto;
+
+}
+
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(img/blur-hospital.jpg);
+    background-size: cover;
+    margin-top: 50px;
+}
+
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.contact .content p {
+    font-weight: 500;
+    color: #fff;
+}
+
+.container {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container .contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container .contactInfo .box {
+    position: relative;
+    position: 20px 0;
+    display: flex;
+}
+
+.container .contactInfo .box .icon {
+    min-height: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    padding-right: 20px;
+}
+
+.container .contactInfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 13px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .contactInfo .box .text h4 {
+    font-weight: 500;
+    color: black;
+    font-size: 20px;
+}
+
+@media (max-width: 800px) {
+    .contact {
+        padding: 50px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container .contactInfo {
+        margin-bottom: 40px;
+    }
+}
+
+.linkIcn {
+    padding: 10px 30px;
+}
+
+.social :hover {
+    background-color: rgb(57, 101, 160);
+    color: white;
+    border-radius: 15px;
+}
+
+.social {
+    font-size: 30px;
+    padding: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.partner {
+    margin-top: 50px;
+}
+
+.relation {
+    margin-top: 40px;
+}
+
+.partner h3 {
+    text-align: center;
+}
+
+.partner h3:after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    border-radius: 15%;
+    background: linear-gradient(#43b9dc, #34d3b4);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.partner h3:hover::after {
+    width: 30%;
+    border-radius: 15%;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.fade-in.appear {
+    opacity: 1;
+}

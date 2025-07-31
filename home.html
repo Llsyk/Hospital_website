@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+  <title>Hygieia</title>
+</head>
+
+<body class="">
+  <div class="header ">
+    <nav class="navbar navbar-expand-sm fixed-top " style="background-color: rgb(57, 101, 160)">
+      <div class="container-fluid">
+        <a class="navbar-brand brandName" style="color: white;">
+          <img src="img/logo.png" alt="" height="70">Hygieia</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item ">
+              <a class="nav-link " aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="doctor.html">Find Doctors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="service.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="package.html">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="article.html">Articles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#bottom">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-light" type="submit">
+            <span class="material-symbols-outlined searchIcn">
+              travel_explore
+            </span>
+        </form>
+      </div>
+    </nav>
+  </div>
+  <!-- header -->
+
+  <div class="initial">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <div class="decription">
+            <img src="img/nurse.png" class="d-block w-100 img-fluid" alt="...">
+            <div class="layer " style="bottom: 70%;">
+              <p class="gp">Your Most Trusted Health Partner
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Best Match Services For You...
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <div class="decription">
+            <img src="img/dayHospital.jpg" class="d-block w-100 img-fluid" alt="...">
+            <div class="layer ">
+              <p class="hosp">Hygieia Internation Hospital stands for about 30 years with great image. Over 5000 patients
+                successfully recovered and we have won over ten awards from accredit organization. Hence, you can trust
+                Hygieia for your most valuable lives.</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <div class="decription">
+            <img src="img/DrPt.jpg" class="d-block w-100  img-fluid" alt="...">
+            <div class="layer modifiedLayer">
+              <p class="gp">The hospital with the services from the bottom of the heart...</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <div class="decription">
+            <img src="img/room.jpg" class="d-block w-100 img-fluid" alt="...">
+            <div class="layer modifiedLayer">
+              <p class="gp">Spacious, Spotless room and Abundant decorations will make you feel like your comfy home...</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <!--  -->
+  <div class="container">
+    <!-- Master -->
+    <div class="more-stuff-grid">
+      <div class="master slide-in from-left glass">
+        <div class="future">
+          <div class="row">
+            <h3> Future of Hygieia</h3>
+            <div class="col-5 d-grid masterImg">
+
+              <img src="img/master.png" height="250px" class="img-fluid">
+            </div>
+            <div class="col-6 d-grid speech">
+              
+              <p>
+                <span style="font-size: 25px;">Dr.Billy</span><br>
+                <span style="font-size: 25px;">CEO & Founder</span><br><br><br>
+                "Over 30 years ago, We made a commitment. We assure that our Hygieia would give a leading light in
+                healhcare, advanced medicine ,trusted care and a passion for healing in the future. We'll always be by
+                your side."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- test -->
+    <div class="more-stuff-grid">
+      <div class="test slide-in from-right">
+        <h3>Free Test for Daily Usage</h3>
+        <div class="row">
+          <div class="col-5 d-grid gap-2 testDiv glass">
+            <a href="bmi.html" class="btn testBtn ">
+              <h5>BMI Test</h5>
+              <span class="material-symbols-outlined icn">
+                medical_information
+              </span>
+            </a>
+          </div>
+          <div class="col-5 d-grid gap-2 testDiv glass">
+            <a href="calorie.html" class="btn testBtn ">
+              <h5>Calorie Test</h5>
+              <span class="material-symbols-outlined icn ">
+                fastfood
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- badges -->
+
+    <div class="counter-up fade-in">
+      <div class="count ">
+        <div class="box glass">
+          <div class="icon1">
+            <i class="fa fa-bed"></i>
+          </div>
+          <div class="counter">5000</div>
+          <div class="text">Bed</div>
+        </div>
+
+        <div class="box glass">
+          <div class="icon">
+            <span class="material-symbols-outlined icn">
+              personal_injury
+            </span>
+          </div>
+          <div class="counter">6500</div>
+          <div class="text">Patients</div>
+        </div>
+
+        <div class="box glass">
+          <div class="icon">
+            <span class="material-symbols-outlined icn">
+              meeting_room
+            </span>
+          </div>
+          <div class="counter">1200</div>
+          <div class="text">Rooms</div>
+        </div>
+
+        <div class="box glass">
+          <div class="icon">
+            <span class="material-symbols-outlined icn">
+              diversity_1
+            </span>
+          </div>
+          <div class="counter">800</div>
+          <div class="text">Staff</div>
+        </div>
+
+        <div class="box glass">
+          <div class="icon">
+            <span class="material-symbols-outlined icn">
+              medical_services
+            </span>
+          </div>
+          <div class="counter">500</div>
+          <div class="text">Services</div>
+        </div>
+      </div>
+    </div>
+    <!-- customer review -->
+    <div class="more-stuff-grid">
+      <div class="review slide-in from-right ">
+        <div class="board glass">
+          <h3>Words from their heart</h3>
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="flex">
+                  <div class="comments">
+
+                    Recently visited medical check up of Hygiena Hospital for a whole body check up. The entire
+                    process from check in to the end was seamless. The staff at the health check department was
+                    courteous,
+                    helpful. I would highly recommend this hospital to anyone looking for something
+                    similar services..
+
+                  </div>
+                  <div class="profile">
+                    <img src="img/avatar1.png" alt="">
+                    <p>Ma Sandi</p>
+                    <div class="star">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="flex">
+                  <div class="comments">
+                    It's very well mannered staff good coordination with patients. Mrs. president assisted very well and
+                    taken good care towards patients. Overall experience is satisfactory. And I also came here for
+                    health
+                    checkup and
+                    all the procedure from start to end was handled smoothly by the staff here and hospital is clean and
+                    neat.
+                  </div>
+                  <div class="profile">
+                    <img src="img/avatar2.png" alt="">
+                    <p>Ko Thura</p>
+                    <div class="star">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="flex">
+                  <div class="comments">
+                    Since long i was suffering from blood in cough but no doctor except Dr.Oo
+                    identified my problem and started the diagnosis. He is very polite and listens to each patient
+                    carefully
+                    and clearly explains the required treatment to be done. Strongly recommends dr. Oo
+                  </div>
+                  <div class="profile">
+                    <img src="img/avatar3.png" alt="">
+                    <p>Ms. Margaret</p>
+                    <div class="star">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="flex">
+                  <div class="comments">
+                    The nurses treated my mother very well. The specialists gave correct diagnosis. And explained
+                    us in detail. Whole operation process and insurance process is smooth. Hygiena hospital is one of
+                    the
+                    best
+                    and most trusted hospital in Asia I have treated some of my relatives and they told me that Hygiena
+                    was
+                    one their best choice.
+                  </div>
+                  <div class="profile">
+                    <img src="img/avatar4.png" alt="">
+                    <p>Ms. Jing Li Wang</p>
+                    <div class="star">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="flex">
+                  <div class="comments">
+                    Hygiena International hospital has the greatest management system and the latest technology to cure
+                    your
+                    disease. The working environment is quite warm and help, so, I am lucky to work and looking forward
+                    to
+                    work at Hygiena. I also recommend all of you to come and reserve the best services at Hygiena
+                    International Hospital
+                  </div>
+                  <div class="profile">
+                    <img src="img/avatar5.png" alt="">
+                    <p>Daw HlaHlaMay</p>
+                    <div class="star">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- appointment -->
+    <div class="more-stuff-grid" style="margin-top: 20px;">
+      <div class="appointmentForm slide-in from-left glass">
+        <div id="top">
+          <section id="appointment" class="appointment">
+            <div class="section-title">
+              <h2>Make an Appointment</h2>
+              <p>You can reserve your appointment virtually and we will contact within 48 hours. If there is some
+                problem,
+                please phone us as your earliest convience.</p>
+            </div>
+
+            <form action="mailto:hygieiaHospital@gmail.com" method="post" enctype="text/plain" role="form" id="form"
+              class="clientForm">
+
+              <!-- action="mailto: llet19987@gmail.com" method="post" enctype="text/plain" -->
+              <div class="row">
+                <div class="col-md-4 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" onkeydown="validate()">
+                  <span id = "text1"></span>
+                </div>
+                <div class="col-md-4 form-group mt-3 mt-md-0">
+                  <input type="text" class="form-control" name="email" id="email" placeholder="Your Email" onkeydown="validation()">
+                  <span id = "text"></span>
+
+                </div>
+                <div class="col-md-4 form-group mt-3 mt-md-0">
+                  <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Mobile Phone" onkeydown="validations()">
+                  <span id = "text2"></span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 form-group mt-3">
+                  <input type="date" name="date" class="form-control datepicker" id="date"
+                    placeholder="Appointment Date">
+
+                </div>
+                <div class="col-md-4 form-group mt-3">
+                  <select name="age" id="age" class="form-select">
+                    <option value="">Select Age</option>
+                    <option value="Below 18">Below 18</option>
+                    <option value="18-40">18-40</option>
+                    <option value="40 above">40 above</option>
+                  </select>
+
+                </div>
+                <div class="col-md-4 form-group mt-3">
+                  <select name="doctor" id="doctor" class="form-select">
+                    <option value="">Select Doctor</option>
+                    <option value="Dr.Robert">Dr.Robert</option>
+                    <option value="Dr.John">Dr.John </option>
+                    <option value="Dr.Linda">Dr.Linda </option>
+                    <option value="Dr.Patricia">Dr.Patricia</option>
+                    <option value="Dr.Mary">Dr.Mary</option>
+                    <option value="Dr.David">Dr.David</option>
+                    <option value="Dr.William">Dr.William</option>
+                    <option value="Dr.Richard">Dr.Richard</option>
+                    <option value="Dr.Tim">Dr.Tim</option>
+                    <option value="Doctor 10">Dr.Elizabeth</option>
+                    <option value="Doctor 11">Dr.Thomas</option>
+                    <option value="Doctor 12">Dr.Susan</option>
+                    <option value="Doctor 13">Dr.Jessica</option>
+                    <option value="Doctor 14">Dr.Sarah</option>
+                    <option value="Doctor 15">Dr.Karen</option>
+                    <option value="Doctor 16">Dr.Daniel</option>
+                    <option value="Doctor 17">Dr.Matthew</option>
+                    <option value="Doctor 18">Dr.Nancy</option>
+                    <option value="Doctor 19">Dr.Mark</option>
+                    <option value="Doctor 20">Dr.Steven</option>
+                    <option value="Doctor 21">Dr.Sandra</option>
+                    <option value="Doctor 22">Dr.Margaret</option>
+                    <option value="Doctor 23">Dr.Betty</option>
+                    <option value="Doctor 24">Dr.Anthony</option>
+                    <option value="Doctor 25">Dr.Austin</option>
+                    <option value="Doctor 26">Dr.Peter</option>
+                    <option value="Doctor 27">Dr.Christina</option>
+                    <option value="Doctor 28">Dr.Paul</option>
+                    <option value="Doctor 29">Dr.Andrew</option>
+                    <option value="Doctor 30">Dr.Ashley</option>
+                    <option value="Doctor 31">Dr.Kimberly</option>
+                    <option value="Doctor 32">Dr.Joshua</option>
+                    <option value="Doctor 33">Dr.Emily</option>
+                    <option value="Doctor 34">Dr.Heather</option>
+                    <option value="Doctor 35">Dr.Olivia</option>
+                    <option value="Doctor 36">Dr.Henry</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
+
+              </div>
+
+              <!-- <div class="text-center"><button type="submit" value="Send">Make an Appointment</button></div> -->
+
+              <!-- model box -->
+
+              <!-- Button trigger modal -->
+              <div class="text-center">
+                <button type="submit" class="clientBtn " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Make an Appointment
+                </button>
+              </div>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Dear patient,</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      We respectedly received your email. We will contact you within 48 hours via telephone. Thank You!
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary popupBtn " data-bs-dismiss="modal">OK</button>
+                      <!-- <button type="button" class="btn">OK</button> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--  -->
+            </form>
+
+
+          </section>
+        </div>
+      </div>
+    </div>
+    <!-- award -->
+    <section id="featured-services" class="featured-services ">
+      <div class="more-stuff-grid ">
+        <div class="award slide-in from-right glass">
+          <h3 class="awardHead">Our Accreditation</h3>
+          <div class="container" data-aos="fade-up">
+
+            <div class="row ">
+              <div class="col-md-3 col-lg-2 d-flex align-items-stretch mb-2 mb-lg-0 awardBox">
+                <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <div class="item">
+                    <img src="img/award1.png" width="100px" height="100px" class="img-fluid">
+                  </div>
+                  <p class="title">Awarded by <br>UNICEF</p>
+
+                </div>
+              </div>
+
+              <div class="col-md-3 col-lg-2 d-flex align-items-stretch mb-2 mb-lg-0 awardBox">
+                <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+                  <div class="item">
+                    <img src="img/award2.png" width="100px" height="50px" class="img-fluid">
+                  </div>
+                  <p class="title">Excellent In <br>Medicine Award</p>
+                </div>
+              </div>
+
+              <div class="col-md-3 col-lg-2 d-flex align-items-stretch mb-2 mb-lg-0 awardBox">
+                <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <div class="item">
+                    <img src="img/award3.png" width="100px" height="100px" class="img-fluid">
+                  </div>
+                  <p class="title">Top 5 in Best Treatment<br> Hospital</p>
+                </div>
+              </div>
+
+              <div class="col-md-3 col-lg-2 d-flex align-items-stretch mb-2 mb-lg-0 awardBox">
+                <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                  <div class="item">
+                    <img src="img/award4.png" width="100px" height="100px" class="img-fluid">
+                  </div>
+                  <p class="title">Best Medical staffs Award</p>
+                </div>
+              </div>
+
+              <div class="col-md-3 col-lg-2 d-flex align-items-stretch mb-2 mb-lg-0 awardBox">
+                <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                  <div class="item">
+                    <img src="img/award5.png" width="60px" height="60px" class="img-fluid">
+                  </div>
+                  <p class="title">Best Medical Service Award</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- contact us -->
+  <!-- contact us -->
+  <section class="contact" id="bottom">
+    <div class="content">
+        <h3 style="color: black;">Get in touch with us</h3>
+    </div>
+    <div class="container contactWrapper">
+        <div class="contactInfo">
+            <div class="box">
+                <div class="icon"><i class="fa fa-phone"></i></div>
+                <div class="text">
+                    <h4>phone</h4>
+                    <p>09-XXX-XXX-XXX<br>09-XXX-XXX-XXX</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon"><i class="fa fa-ambulance"></i></div>
+                <div class="text">
+                    <h4>Emergency</h4>
+                    <p>058-XXX-XXX<br>058-XXX-XXX</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon"><i class="fa fa-envelope "></i></div>
+                <div class="text">
+                    <h4>Email</h4>
+                    <p>HygieiaHospital@gmail.com</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon"><i class="fa fa-home"></i></div>
+                <div class="text">
+                    <h4>Address</h4>
+                    <p>Parami Road, Hlaing Township, Yangon</p>
+                </div>
+            </div>
+
+            <div class="social">
+                <a href="https://www.facebook.com"><i class="fa fa-facebook linkIcn"></i></a>
+                <a href="https://www.whatsapp.com"><i class="fa fa-whatsapp linkIcn"></i></a>
+                <a href="https://t.me/Wendy_KT"><i class="fa fa-telegram linkIcn"></i></a>
+            </div>
+        </div>
+
+
+        
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.404402058941!2d96.13308881432656!3d16.85587812235382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1936f625d4ba7%3A0x9676670831769962!2sUniversity%20of%20Information%20Technology(UIT)!5e0!3m2!1sen!2smm!4v1657377735443!5m2!1sen!2smm"
+                width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+    </div>
+    <div class="copyright">
+        <small>© 2022-2023 By Hygieia International Hospital.</small>
+    </div>
+</section>
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="home.js"></script>
+</body>
+
+</html>
